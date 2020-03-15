@@ -20,14 +20,29 @@ for i in op:
     li = re.sub(r" ?\([^)]+\)", "", i)
     l = re.sub(r'\[.*\]', '', li)
     lin.append(l)
-
+'''
 for i in lin:
+    print()
     print(i)
     response = service.analyze(
         text = i,
         features=Features(categories=CategoriesOptions(limit=3))).get_result()
 
-    print(json.dumps(response['categories'][0]["label"], indent = 2))
+    print(json.dumps(response['categories']], indent = 2))
+
+f.close()'''
+
+
+for i in lin:
+    print()
+    print(i)
+    response = service.analyze(
+        text = i,
+        features=Features(categories=CategoriesOptions(limit=3))).get_result()
+
+    for i in json.dumps(response['categories']):
+        print(i, end= '')
+
 
 f.close()
 

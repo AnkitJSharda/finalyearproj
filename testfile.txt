@@ -1,33 +1,5 @@
-Codeforces [1] is one of many competitive programming
-platforms that provide an opportunity to gain insights into
-coding techniques. In a contest, participants solve about 5 to
-10 well-defined algorithmic programming problems by writing
-short stand-alone solutions in a programming language such
-as C++, Java, or Python. Each solution is generally written by
-only one person (user). It is known whether the solution passed
-or failed. In addition, the user’s skill level (rating/rank) and
-declared country are known. Most problems on Codeforces
-have hundreds or thousands of passing submissions. Unlike
-many other platforms, all submissions on Codeforces are
-publicly viewable, making it an ideal candidate for analysis.
-On Codeforces, users are assigned a numerical rating based
-on their performance in past contests. Users are then assigned
-one of ten ranks based on their rating, ranging from Newbie
-to Legendary Grandmaster. These ranks are shown in the Data
-Set section in Table II.
-The goal of this project is to predict a user’s rank (within
-one rank) and country based solely on a single passing source
-code submission. As well, some interpretation of the learned
-models is done to find differences in coding styles between
-skill levels and countries. Since only passing submissions are
-considered, predictions are based only on coding style and not
-whether the code works or not (all code works).
-Analysis from this project will not only highlight the coding
-techniques of competitive programmers, but may also be
-relevant for code written in industry or academia. While code
-written in programming contests differs from real-world code,
-some coding best practices may apply to both, and the analysis
-techniques used here may also be applicable to other code
-bases. Code from programming contests, however, is easier to
-analyze than most code for the reasons described above(eg
-written by exactly one person).
+Narendra Damodardas Modi is an Indian politician serving as the 14th and current Prime Minister of India since 2014. He was the Chief Minister of Gujarat from 2001 to 2014 and is the Member of Parliament for Varanasi. Modi is a member of the Bharatiya Janata Party (BJP) and of the Rashtriya Swayamsevak Sangh (RSS), a Hindu nationalist volunteer organisation. He is the first prime minister outside of the Indian National Congress to win two consecutive terms with a full majority and the second to complete five years in office after Atal Bihari Vajpayee.[2]
+
+Born to a Gujarati family in Vadnagar, Modi helped his father sell tea as a child and has said he later ran his own stall. He was introduced to the RSS at the age of eight, beginning a long association with the organisation. Modi left home after finishing high-school in part due to an arranged marriage to Jashodaben Chimanlal, which he abandoned and publicly acknowledged only many decades later. Modi travelled around India for two years and visited a number of religious centres before returning to Gujarat. In 1971 he became a full-time worker for the RSS. During the state of emergency imposed across the country in 1975, Modi was forced to go into hiding. The RSS assigned him to the BJP in 1985 and he held several positions within the party hierarchy until 2001, rising to the rank of general secretary.
+
+Modi was appointed Chief Minister of Gujarat in 2001 due to Keshubhai Patel's failing health and poor public image following the earthquake in Bhuj. Modi was elected to the legislative assembly soon after. His administration has been considered complicit in the 2002 Gujarat riots[a] or otherwise criticised for its handling of it. A Supreme Court-appointed Special Investigation Team found no evidence to initiate prosecution proceedings against Modi personally.[b] His policies as chief minister, credited with encouraging economic growth, have received praise.[10] His administration has been criticised for failing to significantly improve health, poverty and education indices in the state.[c]
