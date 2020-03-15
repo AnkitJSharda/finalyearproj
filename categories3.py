@@ -33,10 +33,32 @@ for i in lin:
 f.close()
 
 
+di1 = dict()
 for k,v in di.items():
     v = json.loads(v)
-    print(k, "\n", v[0])
+    t1 = v[0]
+    try:
+        t2 = v[1]
+        t3 = t1["score"]
+        t4 = t2["score"]
+        if((t3-t4)>0.1):
+            di1[k] = t1["label"]
+            #print(k, "\n", t1["label"])
+        else:
+            di1[k] = t2["label"]
+            #print(k, "\n", t2["label"])
+    except IndexError:
+        di1[k] = t1["label"]
+        #print(k, "\n", t1["label"])
     print("\n")
+
+for k,v in di1.items():
+    print(k, "\n", v)
+    print("\n")
+
+
+
+
   
 
 
