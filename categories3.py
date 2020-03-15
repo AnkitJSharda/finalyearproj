@@ -31,16 +31,13 @@ for i in lin:
     di[i] = json.dumps(response['categories'])
     
 f.close()
-'''
+
 
 for k,v in di.items():
-    di[k] = v.split(',')
-'''
-for k,v in di.items():
-    print(k, "\n", v)
+    v = json.loads(v)
+    print(k, "\n", v[0])
     print("\n")
-    #print("\n")
-    #print(type(k), "\n", type(v))
+  
 
 
 
