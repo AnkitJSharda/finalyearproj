@@ -51,6 +51,7 @@ di2 = dict()
 for k,v in di1.items():
     di2[k] = "/".join(v.split("/")[:2])
 
+
 vals = []
 for k,v in di2.items():
     if v not in vals:
@@ -65,9 +66,55 @@ for i in vals:
         if v==i:
             di3[i]+=1
 
-for k,v in di3.items():
+sorted_li = sorted(di3.items(), key=lambda kv: kv[1], reverse = True)
+
+sorted_di3 = dict((x, y) for x, y in sorted_li)
+
+num_of_elems = 0
+
+for k,v in sorted_di3.items():
+    num_of_elems = num_of_elems + 1
+
+els = list(sorted_di3.items())
+fi = els[0][1] #returns tuple of first key-value in reverse_sorted dictionary
+lt = els[-1][1]
+optimum_cnt = (fi + lt) / num_of_elems
+
+include_categories = []
+for k, v in di3.items():
+    if(float(v) >= optimum_cnt):
+        include_categories.append(k)
+
+
+di4 = dict()
+
+for i in include_categories:
+    for k,v in di2.items():
+        if(v==i):
+            di4[k] = v
+            
+for k, v in di4.items():
+    print(k, "\n", v)
+    print("\n")
+
+
+
+di5 = dict()
+
+for i in include_categories:
+    for k,v in sorted_di3.items():
+        if(k==i):
+            di5[k] = v
+
+sorted_lis = sorted(di5.items(), key=lambda kv: kv[1], reverse = True)
+
+sorted_di5 = dict((x, y) for x, y in sorted_lis)
+
+for k, v in sorted_di5.items():
     print(k, "\n", v)
 
+
+    
 
 
 
